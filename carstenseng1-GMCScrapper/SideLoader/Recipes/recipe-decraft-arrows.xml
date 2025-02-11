@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<SL_Recipe xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <UID>GMC_decraft-arrows</UID>
+  <StationType>Survival</StationType>
+  <Ingredients>
+    <Ingredient>
+      <Type>AddSpecificIngredient</Type>
+      <SelectorValue>5200001</SelectorValue>
+      <Ingredient_ItemID xsi:nil="true" />
+    </Ingredient>
+    <Ingredient>
+      <Type>AddSpecificIngredient</Type>
+      <SelectorValue>5200001</SelectorValue>
+      <Ingredient_ItemID xsi:nil="true" />
+    </Ingredient>
+    <Ingredient>
+      <Type>AddSpecificIngredient</Type>
+      <SelectorValue>5200001</SelectorValue>
+      <Ingredient_ItemID xsi:nil="true" />
+    </Ingredient>
+    <Ingredient>
+      <Type>AddSpecificIngredient</Type>
+      <SelectorValue>5200001</SelectorValue>
+      <Ingredient_ItemID xsi:nil="true" />
+    </Ingredient>
+  </Ingredients>
+  <Results>
+    <ItemQty>
+      <ItemID>6400140</ItemID>
+      <Quantity>1</Quantity>
+    </ItemQty>
+  </Results>
+</SL_Recipe>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<SL_Item xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Target_ItemID>4300240</Target_ItemID>
+  <New_ItemID>4300240</New_ItemID>
+  <LegacyItemID xsi:nil="true" />
+  <IsPickable xsi:nil="true" />
+  <IsUsable xsi:nil="true" />
+  <QtyRemovedOnUse xsi:nil="true" />
+  <GroupItemInDisplay xsi:nil="true" />
+  <HasPhysicsWhenWorld xsi:nil="true" />
+  <RepairedInRest xsi:nil="true" />
+  <BehaviorOnNoDurability xsi:nil="true" />
+  <CastType xsi:nil="true" />
+  <CastModifier xsi:nil="true" />
+  <CastLocomotionEnabled xsi:nil="true" />
+  <MobileCastMovementMult xsi:nil="true" />
+  <CastSheatheRequired xsi:nil="true" />
+  <OverrideSellModifier xsi:nil="true" />
+  <ExtensionsEditBehaviour>NONE</ExtensionsEditBehaviour>
+  <EffectBehaviour>Destroy</EffectBehaviour>
+  <EffectTransforms>
+    <SL_EffectTransform>
+      <TransformName>Effects</TransformName>
+      <Position xsi:nil="true" />
+      <Rotation xsi:nil="true" />
+      <Scale xsi:nil="true" />
+      <Effects>
+        <SL_Effect xsi:type="SL_AffectBurntHealth">
+          <Delay>0</Delay>
+          <SyncType>OwnerSync</SyncType>
+          <OverrideCategory>None</OverrideCategory>
+          <AffectQuantity>20</AffectQuantity>
+          <IsModifier>false</IsModifier>
+        </SL_Effect>
+        <SL_Effect xsi:type="SL_AffectHealth">
+          <Delay>0</Delay>
+          <SyncType>OwnerSync</SyncType>
+          <OverrideCategory>None</OverrideCategory>
+          <AffectQuantity>300</AffectQuantity>
+          <IsModifier>false</IsModifier>
+          <AffectQuantityAI>-99999</AffectQuantityAI>
+          <InformSourceCharacter>false</InformSourceCharacter>
+        </SL_Effect>
+        <SL_Effect xsi:type="SL_RemoveStatusEffect">
+          <Delay>0</Delay>
+          <SyncType>OwnerSync</SyncType>
+          <OverrideCategory>None</OverrideCategory>
+          <CleanseType>StatusType</CleanseType>
+          <SelectorValue>Bleeding</SelectorValue>
+        </SL_Effect>
+        <SL_Effect xsi:type="SL_AddStatusEffect">
+          <Delay>0</Delay>
+          <SyncType>OwnerSync</SyncType>
+          <OverrideCategory>None</OverrideCategory>
+          <StatusEffect>Health Recovery 5</StatusEffect>
+          <ChanceToContract>100</ChanceToContract>
+          <AffectController>false</AffectController>
+          <AdditionalLevel>0</AdditionalLevel>
+          <NoDealer>false</NoDealer>
+        </SL_Effect>
+      </Effects>
+      <EffectConditions />
+      <ChildEffects />
+    </SL_EffectTransform>
+  </EffectTransforms>
+</SL_Item>

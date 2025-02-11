@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<SL_StatusEffect xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TargetStatusIdentifier>Poison Immunity</TargetStatusIdentifier>
+  <NewStatusID>-61101</NewStatusID>
+  <StatusIdentifier>Poison Resistance</StatusIdentifier>
+  <Name>Poison Resistance</Name>
+  <Description>Decay Resistance +[E1V1]%. Resist Poison Buildup +[E2V1]</Description>
+  <Lifespan>240</Lifespan>
+  <RefreshRate>0.1</RefreshRate>
+  <Purgeable>true</Purgeable>
+  <Priority>1</Priority>
+  <IgnoreBarrier>false</IgnoreBarrier>
+  <BuildupRecoverySpeed>3</BuildupRecoverySpeed>
+  <IgnoreBuildupIfApplied>false</IgnoreBuildupIfApplied>
+  <AmplifiedStatusIdentifier />
+  <RemoveRequiredStatus>false</RemoveRequiredStatus>
+  <NormalizeDamageDisplay>false</NormalizeDamageDisplay>
+  <DisplayedInHUD>true</DisplayedInHUD>
+  <IsHidden>false</IsHidden>
+  <IsMalusEffect>true</IsMalusEffect>
+  <DelayedDestroyTime>0</DelayedDestroyTime>
+  <ActionOnHit>None</ActionOnHit>
+  <FamilyMode>Bind</FamilyMode>
+  <BindFamily>
+    <UID>iR3Y1DEFGE6F4WIvoBdGpw</UID>
+    <Name>Poison Immunity</Name>
+    <StackBehaviour>IndependantUnique</StackBehaviour>
+    <MaxStackCount>-1</MaxStackCount>
+    <LengthType>Short</LengthType>
+  </BindFamily>
+  <PlayFXOnActivation>true</PlayFXOnActivation>
+  <FXOffset>
+    <x>0</x>
+    <y>0</y>
+    <z>0</z>
+  </FXOffset>
+  <VFXInstantiationType>None</VFXInstantiationType>
+  <VFXPrefab xsi:nil="true" />
+  <SpecialSFX>NONE</SpecialSFX>
+  <PlaySpecialFXOnStop>false</PlaySpecialFXOnStop>
+  <EffectBehaviour>Destroy</EffectBehaviour>
+  <Effects>
+    <SL_EffectTransform>
+      <TransformName>ActivationEffects</TransformName>
+      <Position xsi:nil="true" />
+      <Rotation xsi:nil="true" />
+      <Scale xsi:nil="true" />
+      <Effects>
+        <SL_Effect xsi:type="SL_AffectStat">
+          <Delay>0</Delay>
+          <SyncType>OwnerSync</SyncType>
+          <OverrideCategory>None</OverrideCategory>
+          <Stat_Tag>DecayResistance</Stat_Tag>
+          <AffectQuantity>20</AffectQuantity>
+          <IsModifier>false</IsModifier>
+          <Duration>-1</Duration>
+        </SL_Effect>
+        <SL_Effect xsi:type="SL_AffectStatusEffectBuildUpResistance">
+          <Delay>0</Delay>
+          <SyncType>OwnerSync</SyncType>
+          <OverrideCategory>None</OverrideCategory>
+          <StatusEffectIdentifier>Poisoned</StatusEffectIdentifier>
+          <Value>10</Value>
+          <Duration>0</Duration>
+        </SL_Effect>
+      </Effects>
+    </SL_EffectTransform>
+  </Effects>
+</SL_StatusEffect>
