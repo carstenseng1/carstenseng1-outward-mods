@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <SL_Character xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SaveType>Scene</SaveType>
-  <UID>GMC_Cierzo_Scout_02</UID>
+  <UID>gmc.char.cierzoScout02</UID>
   <Name>Cierzo Scout</Name>
   <DestroyOnDeath>false</DestroyOnDeath>
   <StartingPose>NONE</StartingPose>
@@ -13,13 +13,13 @@
   <StartSheathed>true</StartSheathed>
   <SceneToSpawn>ChersoneseNewTerrain</SceneToSpawn>
   <SpawnPosition>
-    <x>137.352</x>
-    <y>33.39416</y>
-    <z>1452.409</z>
+    <x>186.936</x>
+    <y>30.15443</y>
+    <z>1442.297</z>
   </SpawnPosition>
   <SpawnRotation>
     <x>0</x>
-    <y>103.1046</y>
+    <y>88.78185</y>
     <z>0</z>
   </SpawnRotation>
   <Faction>Player</Faction>
@@ -66,7 +66,7 @@
     <CanWanderFar>true</CanWanderFar>
     <ForceNonCombat>false</ForceNonCombat>
     <AIContagionRange>20</AIContagionRange>
-    <Wander_Speed>1</Wander_Speed>
+    <Wander_Speed>0.25</Wander_Speed>
     <Wander_FollowPlayer>false</Wander_FollowPlayer>
     <Wander_Type>Wander</Wander_Type>
     <Suspicious_Speed>1.75</Suspicious_Speed>

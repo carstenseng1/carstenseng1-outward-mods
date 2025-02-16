@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <SL_Character xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SaveType>Scene</SaveType>
-  <UID>GMC_Cierzo_Scout_03</UID>
+  <UID>gmc.char.cierzoScout04</UID>
   <Name>Cierzo Scout</Name>
   <DestroyOnDeath>false</DestroyOnDeath>
   <StartingPose>NONE</StartingPose>
@@ -13,13 +13,13 @@
   <StartSheathed>true</StartSheathed>
   <SceneToSpawn>ChersoneseNewTerrain</SceneToSpawn>
   <SpawnPosition>
-    <x>1040.495</x>
-    <y>56.84164</y>
-    <z>245.9508</z>
+    <x>1039.109</x>
+    <y>56.17101</y>
+    <z>251.9375</z>
   </SpawnPosition>
   <SpawnRotation>
     <x>0</x>
-    <y>238.3743</y>
+    <y>235.1923</y>
     <z>0</z>
   </SpawnRotation>
   <Faction>Player</Faction>
@@ -27,8 +27,8 @@
     <Factions>Bandits</Factions>
     <Factions>Hounds</Factions>
   </TargetableFactions>
-  <Weapon_ID>2000010</Weapon_ID>
-  <Shield_ID>2300000</Shield_ID>
+  <Weapon_ID>2130110</Weapon_ID>
+  <Shield_ID xsi:nil="true" />
   <Helmet_ID>3000011</Helmet_ID>
   <Chest_ID>3000010</Chest_ID>
   <Boots_ID>3000012</Boots_ID>
@@ -63,10 +63,10 @@
   <AI xsi:type="SL_CharacterAIMelee">
     <CanDodge>true</CanDodge>
     <CanBlock>true</CanBlock>
-    <CanWanderFar>true</CanWanderFar>
+    <CanWanderFar>false</CanWanderFar>
     <ForceNonCombat>false</ForceNonCombat>
     <AIContagionRange>20</AIContagionRange>
-    <Wander_Speed>1</Wander_Speed>
+    <Wander_Speed>0.25</Wander_Speed>
     <Wander_FollowPlayer>false</Wander_FollowPlayer>
     <Wander_Type>Wander</Wander_Type>
     <Suspicious_Speed>1.75</Suspicious_Speed>
