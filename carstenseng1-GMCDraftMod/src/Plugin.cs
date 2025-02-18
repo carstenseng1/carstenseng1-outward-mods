@@ -1,11 +1,13 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.Logging;
+using Discord;
 using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
 // RENAME 'GMCDraftMod' TO SOMETHING ELSE
 namespace GMCDraftMod
@@ -18,7 +20,7 @@ namespace GMCDraftMod
         // Choose a NAME for your project, generally the same as your Assembly Name.
         public const string NAME = "GMC Draft Mod";
         // Increment the VERSION when you release a new version of your mod.
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "0.0.0";
 
         // For accessing your BepInEx Logger from outside of this class (eg Plugin.Log.LogMessage("");)
         internal static ManualLogSource Log;
@@ -56,6 +58,34 @@ namespace GMCDraftMod
                 // This is a "Postfix" (runs after original) on ResourcesPrefabManager.Load
                 // For more documentation on Harmony, see the Harmony Wiki.
                 // https://harmony.pardeike.net/
+            }
+        }
+
+        public class DodgeListener : MonoBehaviour
+        {
+            private Character character;
+
+            public void Awake()
+            {
+                character = GetComponent<Character>();
+            }
+
+            public void DodgeTrigger(Vector3 _direction)
+            {
+                //character.StatusEffectMngr.AddStatusEffect("Burning");
+                character.StatusEffectMngr.RemoveStatusWithIdentifierName("Burning");
+            }
+        }
+
+        [HarmonyPatch(typeof(Character), nameof(Character.Awake))]
+        public class Character_Awake
+        {
+            [HarmonyPrefix]
+            //on awake for whatever character this is add the component
+            static void Prefix(Character __instance)
+            {
+                //on awake for whatever character this is add the component
+                __instance.gameObject.AddComponent<DodgeListener>();
             }
         }
     }
